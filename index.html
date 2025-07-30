@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mandarim Fácil - Lição 1</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fef8f0;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ff8a65;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 2rem;
+    }
+    .section {
+      padding: 20px;
+    }
+    .vocab-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+      padding: 10px;
+      text-align: center;
+    }
+    .comic-panel {
+      display: flex;
+      gap: 15px;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    .avatar {
+      width: 80px;
+      height: 80px;
+      background-color: #ffcdd2;
+      border-radius: 50%;
+    }
+    .bubble {
+      background: #fff9c4;
+      padding: 10px;
+      border-radius: 15px;
+      max-width: 300px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    .quiz {
+      background: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .question {
+      margin-bottom: 10px;
+    }
+    .result {
+      font-weight: bold;
+      color: #e91e63;
+    }
+  </style>
+</head>
+<body>
+  <header>Mandarim Fácil - Lição 1</header>
+
+  <section class="section">
+    <h2>📖 Vocabulário</h2>
+    <div class="vocab-grid">
+      <div class="card">周末<br>zhōumò<br>fim de semana<br>🔊</div>
+      <div class="card">打算<br>dǎsuàn<br>planear<br>🔊</div>
+      <div class="card">最<br>zuì<br>o mais<br>🔊</div>
+      <div class="card">跟<br>gēn<br>com<br>🔊</div>
+      <div class="card">一直<br>yìzhí<br>sempre<br>🔊</div>
+      <div class="card">游戏<br>yóuxì<br>jogo<br>🔊</div>
+      <div class="card">作业<br>zuòyè<br>trabalho de casa<br>🔊</div>
+      <div class="card">着急<br>zháojí<br>preocupado<br>🔊</div>
+      <div class="card">复习<br>fùxí<br>revisar<br>🔊</div>
+      <div class="card">南<br>nán<br>sul<br>🔊</div>
+      <div class="card">北<br>běi<br>norte<br>🔊</div>
+      <div class="card">面包<br>miànbāo<br>pão<br>🔊</div>
+      <div class="card">带<br>dài<br>levar<br>🔊</div>
+      <div class="card">地图<br>dìtú<br>mapa<br>🔊</div>
+      <div class="card">搬<br>bān<br>mudar-se<br>🔊</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>🗣️ Diálogo</h2>
+    <div class="comic-panel">
+      <div class="avatar"></div>
+      <div class="bubble">
+        小刚：你周末打算做什么？<br>
+        Xiǎogāng: Nǐ zhōumò dǎsuàn zuò shénme?<br>
+        O que planeias fazer no fim de semana?
+      </div>
+    </div>
+    <div class="comic-panel">
+      <div class="avatar"></div>
+      <div class="bubble">
+        小丽：我打算跟朋友去玩游戏。<br>
+        Xiǎolì: Wǒ dǎsuàn gēn péngyou qù wán yóuxì.<br>
+        Eu planeio ir jogar com os amigos.
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>🧠 Gramática</h2>
+    <ul>
+      <li>✅ Complemento de resultado "好" – Ex: 作业做好了。 (Os trabalhos estão bem feitos.)</li>
+      <li>❌ Estrutura negativa “也不” – Ex: 他也不复习。 (Ele também não revisa.)</li>
+      <li>🔗 Conjunção “那” – Ex: 那我们一起去吧。 (Então vamos juntos.)</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>📝 Quiz</h2>
+    <div class="quiz">
+      <div class="question">1. O que significa “地图”？</div>
+      <button onclick="document.getElementById('r1').innerText='✔️ Correto!'">Mapa</button>
+      <button onclick="document.getElementById('r1').innerText='Hmm... quase! A tua mãe vai ficar zangada contigo se não reveres mais!'">Pão</button>
+      <div class="result" id="r1"></div>
+    </div>
+  </section>
+</body>
+</html>
